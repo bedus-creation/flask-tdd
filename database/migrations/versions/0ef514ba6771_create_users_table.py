@@ -1,12 +1,12 @@
 """create users table
 
 Revision ID: 0ef514ba6771
-Revises: 
+Revises:
 Create Date: 2020-07-16 13:01:24.395528
 
 """
 from alembic import op
-from public.app import db
+from bootstrap.app import db
 
 
 # revision identifiers, used by Alembic.
