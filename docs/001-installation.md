@@ -16,7 +16,7 @@ pipenv install flask
 ### Application Run
 Export flask app as:
 ```
-export FLASK_APP=public/app.py
+export FLASK_APP=run.py
 ```
 Further run app as:
 ```

@@ -24,3 +24,22 @@ alembic revision -m "create users table"
 ```
 alembic upgrade
 ```
+
+#### Model
+Model is a python class that maps to a database table in DBMS, and object maps to a row of database table.
+
+Consider a `Thread` model to create. At first thread model is created under the folder
+`app/domain/artefact/Thread.py` as
+
+```python
+from bootstrap.app import TableName
+from bootstrap.app import db
+
+
+class Thread(db.Model):
+    __tablename__ = TableName.USER
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String)
+    description = db.Column(db.text)
+```
